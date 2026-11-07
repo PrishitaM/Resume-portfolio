@@ -1,0 +1,616 @@
+{
+ "threshold": 2,
+ "entries": [
+  {
+   "id": "greeting",
+   "answer": "Hello! I can tell you about Prishita’s experience, projects, skills and how to contact her. What would you like to know?",
+   "strong": [
+    "hello",
+    "hi",
+    "hey",
+    "namaste",
+    "good morning",
+    "good evening"
+   ],
+   "keywords": [],
+   "followups": [
+    "What did she build at FTS Solutions?",
+    "Tell me about the ML ensemble project",
+    "How can I contact her?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "thanks",
+   "answer": "You’re welcome! Ask anything else about her work, or reach her directly at prishita.matreja@gmail.com.",
+   "strong": [
+    "thanks",
+    "thank",
+    "thankyou",
+    "thx"
+   ],
+   "keywords": [],
+   "followups": [
+    "What projects has she built?",
+    "How can I contact her?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "about",
+   "answer": "Prishita Matreja is a CSE (Data Science) student at Bhagwan Parshuram Institute of Technology (2023–2027) and a paid AI Developer Intern at FTS Solutions. She builds LLM-powered tools with RAG, Ollama and FastAPI, writes Spring Boot backends, and has ensemble machine learning and Tableau work to her name.",
+   "strong": [
+    "who is prishita",
+    "about prishita",
+    "about her",
+    "introduce",
+    "tell me about her",
+    "tell me about prishita",
+    "summary",
+    "who is she"
+   ],
+   "keywords": [
+    "who",
+    "about",
+    "bio",
+    "profile",
+    "overview"
+   ],
+   "followups": [
+    "What is her experience?",
+    "What projects has she built?"
+   ],
+   "generic": true
+  },
+  {
+   "id": "contact",
+   "answer": "The best way to reach Prishita is email: prishita.matreja@gmail.com. Her code is on GitHub at github.com/PrishitaM, and her deployed CleanSight app is at cleansight.streamlit.app.",
+   "strong": [
+    "contact",
+    "email",
+    "mail",
+    "reach",
+    "hire",
+    "hiring",
+    "linkedin",
+    "github",
+    "socials",
+    "social"
+   ],
+   "keywords": [
+    "connect",
+    "touch",
+    "message",
+    "talk",
+    "recruit",
+    "opportunity",
+    "job offer"
+   ],
+   "followups": [
+    "What projects has she built?",
+    "What is her experience?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "education",
+   "answer": "Prishita is pursuing a B.Tech in CSE (Data Science) at Bhagwan Parshuram Institute of Technology, I.P. University (2023–2027), with a cumulative 88.6%. Before that, at Delhi Public School Dwarka, she scored 92.4% in Class XII and 95% in Class X.",
+   "strong": [
+    "education",
+    "college",
+    "university",
+    "degree",
+    "cgpa",
+    "percentage",
+    "btech",
+    "b.tech",
+    "marks",
+    "school",
+    "studying",
+    "qualification"
+   ],
+   "keywords": [],
+   "followups": [
+    "What are her skills?",
+    "What is her experience?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "skills",
+   "answer": "Languages: Python, Java, C#, SQL, C++, JavaScript. AI: LLMs, LangChain, RAG, OpenAI API, Groq API, Ollama. ML: Scikit-learn, Random Forest, bagging and boosting ensembles, XGBoost, TensorFlow/Keras, PyTorch. Backend: FastAPI, .NET, Spring Boot, JWT. Data: MySQL, SQL Server, Supabase, Tableau, Streamlit.",
+   "strong": [
+    "skills",
+    "skill",
+    "tech stack",
+    "technologies",
+    "stack",
+    "tools",
+    "technology",
+    "languages"
+   ],
+   "keywords": [
+    "good at",
+    "expertise",
+    "know",
+    "proficient"
+   ],
+   "followups": [
+    "Which LLM tools does she use?",
+    "Tell me about the ML ensemble project"
+   ],
+   "generic": true
+  },
+  {
+   "id": "langchain",
+   "answer": "Prishita uses LangChain to build retrieval pipelines: loading documents, chunking them, retrieving the relevant passages and passing them to an LLM. Her PDF RAG chatbot is built this way on top of local Ollama models.",
+   "strong": [
+    "langchain",
+    "lang chain",
+    "chains",
+    "pipelines"
+   ],
+   "keywords": [
+    "orchestration",
+    "framework"
+   ],
+   "followups": [
+    "Tell me about the PDF RAG chatbot",
+    "Which projects use RAG?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "llm",
+   "answer": "She works with hosted and local LLMs: the Groq and OpenAI APIs for hosted models and Ollama for local inference. At FTS Solutions she uses Ollama for log explanation, question answering and automated emails, and she designs prompts and retrieval so answers stay grounded in real data.",
+   "strong": [
+    "llm",
+    "llms",
+    "openai",
+    "open ai",
+    "groq",
+    "ollama",
+    "gpt",
+    "prompt",
+    "prompts",
+    "prompting",
+    "language model",
+    "language models",
+    "genai",
+    "generative"
+   ],
+   "keywords": [
+    "ai",
+    "model",
+    "models"
+   ],
+   "followups": [
+    "Which projects use RAG?",
+    "What did she build at FTS Solutions?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "rag",
+   "answer": "RAG is central to her work. She has used it in the AI Log Interpreter, the Ask AI web app, the PDF RAG chatbot and Revenue Risk Radar, grounding LLM output in retrieved logs, documents or knowledge-base entries instead of relying on model memory.",
+   "strong": [
+    "rag",
+    "retrieval",
+    "knowledge base",
+    "vector",
+    "vectors",
+    "embedding",
+    "embeddings",
+    "retrieval augmented"
+   ],
+   "keywords": [
+    "grounded",
+    "context"
+   ],
+   "followups": [
+    "Tell me about the PDF RAG chatbot",
+    "Tell me about Revenue Risk Radar"
+   ],
+   "generic": false
+  },
+  {
+   "id": "experience",
+   "answer": "Prishita has three internships: AI Developer Intern at FTS Solutions (22 June 2026 to present, paid), Software Developer Intern at Franconnect, Noida (16 June to 19 August 2025), and Summer Intern at IntersElite (16 July to 22 September 2024).",
+   "strong": [
+    "experience",
+    "internship",
+    "internships",
+    "intern",
+    "interns",
+    "work experience",
+    "career",
+    "worked",
+    "employment"
+   ],
+   "keywords": [
+    "job",
+    "work",
+    "role",
+    "roles",
+    "company",
+    "companies"
+   ],
+   "followups": [
+    "What did she build at FTS Solutions?",
+    "Tell me about the cab booking backend"
+   ],
+   "generic": true
+  },
+  {
+   "id": "fts",
+   "answer": "At FTS Solutions (from 22 June 2026) she built an AI Log Interpreter in C# and .NET with Ollama and RAG, extended a React and FastAPI Ask AI app with Ollama answers, RAG retrieval and email automation, and wrote a Windows Worker Service that transfers files to an SFTP server.",
+   "strong": [
+    "fts",
+    "fts solutions",
+    "current role",
+    "current job",
+    "ai developer",
+    "right now",
+    "currently"
+   ],
+   "keywords": [],
+   "followups": [
+    "Which projects use RAG?",
+    "Which LLM tools does she use?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "franconnect",
+   "answer": "At Franconnect, Noida (16 June to 19 August 2025) she developed REST APIs with Spring Boot, Spring MVC and Hibernate ORM, added JWT-based authentication, stored data in MySQL and tested the APIs with Postman, following clean-code practices.",
+   "strong": [
+    "franconnect",
+    "franconnect noida",
+    "software developer intern",
+    "spring mvc",
+    "hibernate"
+   ],
+   "keywords": [
+    "j2ee",
+    "jsp"
+   ],
+   "followups": [
+    "Tell me about the cab booking backend",
+    "What is her experience?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "interselite",
+   "answer": "At IntersElite (16 July to 22 September 2024) she worked on C and C++, data structures and algorithms, and received an Outstanding Performance Certificate for the best project in her batch.",
+   "strong": [
+    "interselite",
+    "inters elite",
+    "summer intern",
+    "summer internship"
+   ],
+   "keywords": [
+    "c++",
+    "dsa",
+    "algorithms"
+   ],
+   "followups": [
+    "What is her experience?",
+    "What did she build at FTS Solutions?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "projects",
+   "answer": "Her main projects are CleanSight (a deployed data cleaning app), Revenue Risk Radar (AI payment recovery), a PDF RAG chatbot, a Tableau insurance storyboard, a Spring Boot cab booking backend, three tools built at FTS Solutions, and a Visa Approval ensemble ML project. Ask about any of them by name.",
+   "strong": [
+    "projects",
+    "project",
+    "portfolio",
+    "built",
+    "build",
+    "made",
+    "showcase",
+    "work samples"
+   ],
+   "keywords": [
+    "created",
+    "developed",
+    "apps",
+    "applications"
+   ],
+   "followups": [
+    "Tell me about Revenue Risk Radar",
+    "Tell me about the ML ensemble project",
+    "Tell me about CleanSight"
+   ],
+   "generic": true
+  },
+  {
+   "id": "cleansight",
+   "answer": "CleanSight is a deployed data profiling and cleaning web app built with Python, Streamlit, Pandas and Seaborn. It handles large datasets with interactive dashboards and outlier detection, and a research paper on it has been published. Try it at cleansight.streamlit.app.",
+   "strong": [
+    "cleansight",
+    "clean sight",
+    "cleansite",
+    "data cleaning",
+    "data profiling",
+    "research paper",
+    "published paper",
+    "streamlit"
+   ],
+   "keywords": [
+    "paper",
+    "outlier",
+    "outliers",
+    "profiling",
+    "cleaning"
+   ],
+   "followups": [
+    "What projects has she built?",
+    "What are her skills?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "revenue",
+   "answer": "Revenue Risk Radar analyses payment events to find failures and churn risk. It receives Razorpay Test Mode webhooks, classifies events like payment.captured and payment.failed, and uses the Groq LLM API with a RAG knowledge base to recommend recovery actions. A dashboard shows urgency and next steps, and automated support workflows escalate complex cases. Data lives in Supabase and SQL Server.",
+   "strong": [
+    "revenue risk radar",
+    "revenue",
+    "razorpay",
+    "churn",
+    "payment",
+    "payments",
+    "webhook",
+    "webhooks",
+    "supabase"
+   ],
+   "keywords": [
+    "failed",
+    "recovery",
+    "fintech"
+   ],
+   "followups": [
+    "Which projects use RAG?",
+    "Which LLM tools does she use?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "pdfrag",
+   "answer": "The PDF RAG chatbot answers questions about uploaded PDFs. A LangChain pipeline splits documents into chunks and retrieves the most relevant passages, and a local Ollama model writes answers grounded in them, so documents stay on the machine. Data is stored in SQL Server (SSMS), and the code is on GitHub.",
+   "strong": [
+    "pdf",
+    "pdf rag",
+    "pdf chatbot",
+    "document qa"
+   ],
+   "keywords": [
+    "documents",
+    "document",
+    "local llm"
+   ],
+   "followups": [
+    "Which projects use RAG?",
+    "Which LLM tools does she use?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "tableau",
+   "answer": "The Car Insurance Claims Analysis is a Tableau storyboard for senior management. It has five dashboards, at least eight chart types and KPIs, two calculated fields and two parameters, plus an executive-summary dashboard with conclusions and recommendations. It covers customer profiles, claims, vehicle risk, segmentation and pricing.",
+   "strong": [
+    "tableau",
+    "storyboard",
+    "dashboard",
+    "dashboards",
+    "insurance",
+    "claims",
+    "bi",
+    "business intelligence"
+   ],
+   "keywords": [
+    "visualization",
+    "visualisation",
+    "kpi",
+    "kpis"
+   ],
+   "followups": [
+    "What projects has she built?",
+    "What are her skills?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "cab",
+   "answer": "The cab booking backend is a layered Spring Boot service with REST APIs for bookings, user management and fare calculation. It uses JPA with MySQL, Spring Security with stateless JWT authentication, Lombok, and distance-based fares with Google Maps integration. All endpoints were tested in Postman, and the code is on GitHub.",
+   "strong": [
+    "cab",
+    "cab booking",
+    "booking backend",
+    "spring boot",
+    "springboot",
+    "jpa",
+    "jwt",
+    "backend",
+    "fare"
+   ],
+   "keywords": [
+    "java",
+    "spring",
+    "rest",
+    "api",
+    "apis",
+    "security"
+   ],
+   "followups": [
+    "What is her experience?",
+    "What are her skills?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "logint",
+   "answer": "The AI Log Interpreter, built at FTS Solutions in C# and .NET, parses application logs, identifies errors and writes summaries with likely root causes. It uses Ollama for local LLM inference and RAG for context, with SQL Server behind it.",
+   "strong": [
+    "log interpreter",
+    "log analyzer",
+    "log analyser",
+    "logs",
+    "log",
+    "interpreter",
+    "root cause"
+   ],
+   "keywords": [
+    "errors",
+    "debugging",
+    ".net",
+    "dotnet",
+    "c#"
+   ],
+   "followups": [
+    "Which projects use RAG?",
+    "What did she build at FTS Solutions?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "askai",
+   "answer": "The Ask AI web application at FTS Solutions is a React and FastAPI app that she enhanced with Ollama-powered answers, RAG-based knowledge retrieval, and automated email generation with escalation workflows for hard questions.",
+   "strong": [
+    "ask ai",
+    "askai",
+    "ask ai app",
+    "fastapi",
+    "react",
+    "email generation",
+    "escalation"
+   ],
+   "keywords": [
+    "emails"
+   ],
+   "followups": [
+    "Which projects use RAG?",
+    "Which LLM tools does she use?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "transfer",
+   "answer": "The file transfer service is a Windows Worker Service that checks for new files every 10 minutes and sends them to an SFTP server. If the internet is down, it keeps a local backup and sends the files when the connection returns.",
+   "strong": [
+    "sftp",
+    "file transfer",
+    "worker service",
+    "windows service",
+    "windows worker",
+    "automated transfer"
+   ],
+   "keywords": [
+    "backup",
+    "files"
+   ],
+   "followups": [
+    "What did she build at FTS Solutions?",
+    "What projects has she built?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "ml",
+   "answer": "Her flagship ML project predicts visa approval (Certified or Denied). She benchmarked a Decision Tree baseline against Random Forest, Bagging, AdaBoost, Gradient Boosting and XGBoost on original, SMOTE-oversampled and undersampled data, tuned them with RandomizedSearchCV, and judged them on precision, recall and F1. Ensembles beat single models, and the analysis showed wages, experience and full-time roles drive approvals.",
+   "strong": [
+    "machine learning",
+    "ml",
+    "ensemble",
+    "visa",
+    "boosting",
+    "bagging",
+    "random forest",
+    "xgboost",
+    "adaboost",
+    "gradient boosting",
+    "smote",
+    "hyperparameter",
+    "classification",
+    "visa approval"
+   ],
+   "keywords": [
+    "model",
+    "models",
+    "predict",
+    "prediction",
+    "scikit",
+    "sklearn"
+   ],
+   "followups": [
+    "What are her skills?",
+    "What projects has she built?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "achievements",
+   "answer": "Prishita received an Outstanding Performance Certificate from IntersElite for the best project in her batch, completed the BCG X Forage job simulation on data for decision makers (April 2026), and was selected in rounds of Statathon and hackathons.",
+   "strong": [
+    "achievements",
+    "achievement",
+    "award",
+    "awards",
+    "certificate",
+    "certificates",
+    "hackathon",
+    "hackathons",
+    "statathon",
+    "forage",
+    "bcg",
+    "bcg x"
+   ],
+   "keywords": [
+    "recognition",
+    "honors",
+    "won"
+   ],
+   "followups": [
+    "What is her experience?",
+    "What projects has she built?"
+   ],
+   "generic": false
+  },
+  {
+   "id": "meta",
+   "answer": "This assistant answers common questions instantly from a curated knowledge base. For anything outside it, it retrieves the closest facts about Prishita and asks an LLM on Groq to write the reply, so answers stay grounded in her real work.",
+   "strong": [
+    "this chatbot",
+    "this assistant",
+    "how does this work",
+    "how do you work",
+    "how are you built",
+    "this site",
+    "this website",
+    "this portfolio",
+    "how does this chatbot work",
+    "how does it work",
+    "how do you work",
+    "this chatbot"
+   ],
+   "keywords": [
+    "built with"
+   ],
+   "followups": [
+    "What projects has she built?",
+    "How can I contact her?"
+   ],
+   "generic": false
+  }
+ ],
+ "fallback": {
+  "answer": "I don’t have a ready answer for that. I can cover Prishita’s internships, projects, skills, education and contact details. For anything else, email prishita.matreja@gmail.com.",
+  "followups": [
+   "What projects has she built?",
+   "What is her experience?",
+   "How can I contact her?"
+  ]
+ }
+}

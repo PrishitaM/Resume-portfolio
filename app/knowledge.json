@@ -1,0 +1,309 @@
+{
+ "name": "Prishita Matreja",
+ "tagline": "I build AI tools that read logs, PDFs and payments, and the data pipelines behind them.",
+ "summary": "CSE (Data Science) student at Bhagwan Parshuram Institute of Technology and AI Developer Intern with hands-on experience building and deploying full-stack AI applications, including LLM-powered tools using RAG, Ollama and FastAPI. Also experienced in backend development with Java, Spring Boot and Spring MVC, and in data visualization with Tableau. Strong foundation in NLP, machine learning (ANN, CNN) and end-to-end AI pipeline design.",
+ "education": "B.Tech in CSE (Data Science), Bhagwan Parshuram Institute of Technology, I.P. University, 2023-2027, cumulative 88.6%. Delhi Public School Dwarka: XII 92.4%, X 95%.",
+ "email": "prishita.matreja@gmail.com",
+ "socials": [
+  {
+   "label": "Email",
+   "text": "prishita.matreja@gmail.com",
+   "url": "mailto:prishita.matreja@gmail.com"
+  },
+  {
+   "label": "GitHub",
+   "text": "github.com/PrishitaM",
+   "url": "https://github.com/PrishitaM"
+  },
+  {
+   "label": "LinkedIn",
+   "text": "",
+   "url": ""
+  },
+  {
+   "label": "CleanSight (live)",
+   "text": "cleansight.streamlit.app",
+   "url": "https://cleansight.streamlit.app/"
+  }
+ ],
+ "skills": {
+  "Languages": [
+   "Python",
+   "Java",
+   "C#",
+   "SQL",
+   "C++",
+   "JavaScript",
+   "HTML/CSS"
+  ],
+  "AI and LLMs": [
+   "LLMs",
+   "Prompt engineering",
+   "OpenAI API",
+   "Groq API",
+   "Ollama (local LLMs)",
+   "LangChain",
+   "RAG pipelines",
+   "Embeddings",
+   "Vector databases"
+  ],
+  "Machine learning": [
+   "Scikit-learn",
+   "Random Forest",
+   "Bagging",
+   "AdaBoost",
+   "Gradient Boosting",
+   "XGBoost",
+   "SMOTE and resampling",
+   "Hyperparameter tuning",
+   "TensorFlow/Keras",
+   "PyTorch",
+   "ANN and CNN",
+   "NLP"
+  ],
+  "Backend": [
+   "FastAPI",
+   ".NET",
+   "Spring Boot",
+   "Spring MVC",
+   "Hibernate",
+   "REST APIs",
+   "JWT authentication"
+  ],
+  "Data": [
+   "MySQL",
+   "SQL Server (SSMS)",
+   "Supabase",
+   "Pandas",
+   "NumPy"
+  ],
+  "Visualization": [
+   "Tableau",
+   "Streamlit",
+   "Matplotlib",
+   "Seaborn"
+  ],
+  "Tools": [
+   "Git",
+   "Postman",
+   "Razorpay webhooks"
+  ]
+ },
+ "experience": [
+  {
+   "role": "AI Developer Intern (Paid)",
+   "company": "FTS Solutions",
+   "dates": "22 June 2026 - Present",
+   "points": [
+    "Built an AI log interpreter in C# and .NET that uses Ollama and RAG to explain system errors.",
+    "Extended a React and FastAPI web application with Ollama responses, RAG retrieval and automated emails.",
+    "Built a Windows Worker Service that moves incoming files to an SFTP server."
+   ]
+  },
+  {
+   "role": "Software Developer Intern",
+   "company": "Franconnect, Noida",
+   "dates": "16 June 2025 - 19 August 2025",
+   "points": [
+    "Developed REST APIs with Spring Boot, Spring MVC, Hibernate ORM, JSP and J2EE.",
+    "Implemented JWT-based authentication and stored data in MySQL.",
+    "Followed clean-code practices and tested APIs with Postman."
+   ]
+  },
+  {
+   "role": "Summer Intern",
+   "company": "IntersElite",
+   "dates": "16 July 2024 - 22 September 2024",
+   "points": [
+    "Worked on C and C++ coding, data structures and algorithms.",
+    "Received an Outstanding Performance Certificate for the best project in the batch."
+   ]
+  }
+ ],
+ "projects": [
+  {
+   "id": "cleansight",
+   "group": "Featured",
+   "title": "CleanSight: data cleaning and profiling",
+   "stack": [
+    "Python",
+    "Streamlit",
+    "Pandas",
+    "Seaborn"
+   ],
+   "badge": "Live, with published paper",
+   "description": "A deployed web app that profiles and cleans large datasets, with interactive dashboards and outlier detection. A research paper on it has been published.",
+   "links": [
+    {
+     "label": "Open app",
+     "url": "https://cleansight.streamlit.app/"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/PrishitaM/Automated_Data_Cleaning_platform"
+    }
+   ]
+  },
+  {
+   "id": "revenue-risk-radar",
+   "group": "Featured",
+   "title": "Revenue Risk Radar",
+   "stack": [
+    "Python",
+    "Razorpay",
+    "Groq LLM",
+    "RAG",
+    "Supabase",
+    "SQL Server"
+   ],
+   "description": "Analyses payment events to find failures and churn risk, then generates AI recommendations to help a business recover revenue.",
+   "highlights": [
+    "Receives Razorpay Test Mode webhooks and classifies events such as payment.captured, payment.authorized and payment.failed.",
+    "Uses the Groq LLM API with a RAG knowledge base to explain each issue and recommend a recovery action.",
+    "Dashboard shows events, classification, urgency, explanation and recommended action.",
+    "Automated support workflow with AI-generated replies and escalation for complex or unresolved queries.",
+    "Data stored in Supabase and SQL Server (SSMS)."
+   ],
+    "links": [{"label": "Demo", "url": "https://canva.link/t0ekcl3f1tq68ew"}]
+  },
+  {
+   "id": "pdf-rag",
+   "group": "Featured",
+   "title": "PDF RAG chatbot",
+   "stack": [
+    "Python",
+    "LangChain",
+    "RAG",
+    "Ollama",
+    "SQL Server"
+   ],
+   "description": "A chatbot that reads PDFs and answers questions about them, running its language model locally.",
+   "highlights": [
+    "Loads PDFs, splits them into chunks and retrieves the most relevant passages for each question with a LangChain pipeline.",
+    "Answers are grounded in the retrieved passages, so replies stay tied to what the document actually says.",
+    "Runs inference locally with Ollama, so documents never leave the machine and no paid API is needed.",
+    "Uses SQL Server (SSMS) for data storage.",
+    "Code is on GitHub."
+   ],
+   "links": []
+  },
+  {
+   "id": "tableau-claims",
+   "group": "Featured",
+   "title": "Car Insurance Claims Analysis (Tableau Storyboard)",
+   "stack": [
+    "Tableau",
+    "Business intelligence",
+    "Risk analysis"
+   ],
+   "description": "An interactive storyboard for senior management covering customer profiles, claims, vehicle risk, segmentation, pricing and business performance.",
+   "highlights": [
+    "Five dashboards, at least eight chart types and KPIs, two calculated fields and two parameters.",
+    "An executive-summary dashboard with conclusions, recommendations and insights explaining each chart."
+   ],
+   "links": []
+  },
+  {
+   "id": "cab-booking",
+   "group": "Featured",
+   "title": "Cab Booking Backend",
+   "stack": [
+    "Java",
+    "Spring Boot",
+    "JPA",
+    "MySQL",
+    "Spring Security",
+    "JWT",
+    "Lombok",
+    "Postman"
+   ],
+   "description": "A scalable backend for a ride-booking platform, built as a layered Spring Boot service.",
+   "highlights": [
+    "REST APIs for booking rides, managing users and calculating fares.",
+    "Layered design: controllers, services and JPA repositories with entities mapped to MySQL.",
+    "Stateless authentication with Spring Security and JWT, so protected endpoints need a valid token.",
+    "Fare calculation based on trip distance, with Google Maps integration in the project.",
+    "Lombok removes boilerplate; every endpoint tested in Postman."
+   ],
+   "links": [
+    {
+     "label": "Code",
+     "url": "https://github.com/PrishitaM/Cab_booking_backend"
+    }
+   ]
+  },
+  {
+   "id": "fts-log",
+   "group": "FTS Solutions internship",
+   "title": "AI Log Interpreter",
+   "stack": [
+    "C#",
+    ".NET",
+    "Ollama",
+    "RAG",
+    "SQL Server"
+   ],
+   "description": "Reads application logs, identifies errors, and writes summaries with likely root causes using a local LLM and retrieval over past context.",
+   "links": []
+  },
+  {
+   "id": "fts-askai",
+   "group": "FTS Solutions internship",
+   "title": "Ask AI web application",
+   "stack": [
+    "React",
+    "FastAPI",
+    "Ollama",
+    "RAG",
+    "REST APIs"
+   ],
+   "description": "Enhanced a React and FastAPI app with Ollama-powered answers, RAG-based knowledge retrieval, and automated email generation with escalation workflows.",
+   "links": []
+  },
+  {
+   "id": "fts-transfer",
+   "group": "FTS Solutions internship",
+   "title": "Automated Windows file transfer service",
+   "stack": [
+    "C#",
+    "Windows Worker Service",
+    "SFTP"
+   ],
+   "description": "A background service that checks for new files every 10 minutes and sends them to an SFTP server, keeping a local backup when the internet is unavailable.",
+   "links": []
+  },
+  {
+   "id": "visa-ml",
+    "group": "Featured",
+   "title": "Visa Approval Prediction: bagging and boosting ensembles",
+   "stack": [
+    "Python",
+    "Scikit-learn",
+    "XGBoost",
+    "Imbalanced-learn",
+    "Pandas",
+    "Seaborn"
+   ],
+   "description": "An end-to-end classifier that predicts whether a visa application will be Certified or Denied, built to cut manual processing time at the Office of Foreign Labor Certification.",
+   "highlights": [
+    "Benchmarked a Decision Tree baseline against Random Forest, Bagging, AdaBoost, Gradient Boosting and XGBoost.",
+    "Trained every model on three datasets, original, SMOTE-oversampled and undersampled, to study the accuracy versus recall trade-off on the minority class.",
+    "Tuned the leading models with RandomizedSearchCV and chose the final model on precision, recall and F1, not accuracy alone.",
+    "Prevented data leakage with a proper train-test split, treated outliers with the IQR method and encoded categorical features.",
+    "Ensemble models beat single models, and the final model generalised well to unseen data.",
+    "Turned results into business insight: higher wages, prior job experience and full-time roles raise approval chances."
+   ],
+   "links": [
+    {
+     "label": "Code",
+     "url": "https://github.com/PrishitaM/Visa-Approval-Prediction-ML"
+    }
+   ]
+  }
+ ],
+ "achievements": [
+  "Outstanding Performance Certificate from IntersElite for the best project in the batch.",
+  "BCG X Forage job simulation: Introduction to Data for Decision Makers (April 2026).",
+  "Selected in rounds of Statathon and hackathons."
+ ]
+}

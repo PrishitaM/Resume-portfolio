@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prishita Matreja · AI and data portfolio</title>
+<meta name="description" content="Portfolio of Prishita Matreja: AI developer intern building RAG, LLM and data tools.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F2F4F8;--card:#fff;--ink:#0F172A;--muted:#566075;--line:#D9DFEA;--accent:#2540D9;--soft:#E4E9FF;--live:#0E7C5A;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--paper:#0E1320;--card:#161D2F;--ink:#E8ECF6;--muted:#97A1B8;--line:#27304A;--accent:#8EA2FF;--soft:#1F2850;--live:#4ADE9F}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.6 "IBM Plex Sans",system-ui,sans-serif}
+a{color:var(--accent)}a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;margin:0;line-height:1.1}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:48px;padding:72px 0 56px;align-items:start}
+h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:700;letter-spacing:-.03em}
+.tag{font-size:1.25rem;max-width:34ch;margin:20px 0 24px}
+.contact{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0;font-size:.98rem}
+.contact dt{color:var(--muted)}.contact dd{margin:0;font-weight:500;overflow-wrap:anywhere}
+.chat{background:var(--card);border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column;height:480px}
+.chat h2{font-size:1.1rem;padding:16px 18px 0}
+.chat p.sub{margin:2px 18px 0;color:var(--muted);font-size:.88rem}
+#log{flex:1;overflow:auto;padding:14px 18px;display:flex;flex-direction:column;gap:10px}
+.m{max-width:88%;padding:9px 13px;border-radius:12px;white-space:pre-wrap;font-size:.95rem}
+.m.u{align-self:flex-end;background:var(--accent);color:var(--paper)}
+.m.a{background:var(--soft)}.m.e{background:transparent;border:1px dashed var(--muted);color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips button{font:inherit;font-size:.85rem;padding:4px 11px;border:1px solid var(--line);background:none;color:var(--ink);border-radius:99px;cursor:pointer}
+.chips button:hover{border-color:var(--accent)}
+form{display:flex;gap:8px;padding:12px 14px;border-top:1px solid var(--line)}
+input{flex:1;font:inherit;padding:9px 12px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink)}
+.send{font:inherit;font-weight:500;padding:9px 16px;border:0;border-radius:8px;background:var(--accent);color:var(--paper);cursor:pointer}
+.send:disabled{opacity:.5}
+section{padding:48px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:2rem;margin-bottom:28px}
+.job{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:0 0 28px 20px;border-left:2px solid var(--line);position:relative;margin-left:4px}
+.job::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--accent)}
+.job.now::before{background:var(--accent)}
+.when{color:var(--muted);font-size:.9rem}
+.job h3,.proj h3{font-size:1.3rem}
+.co{color:var(--muted);margin:2px 0 8px}
+ul{margin:8px 0 0;padding-left:1.1em}li{margin:4px 0;max-width:70ch}
+.group{margin:32px 0 6px;font:700 1.05rem "Bricolage Grotesque",sans-serif;color:var(--muted)}
+.proj{padding:22px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:200px 1fr;gap:24px}
+.stack{color:var(--muted);font-size:.88rem}
+.badge{display:inline-block;margin-top:8px;padding:2px 10px;border-radius:99px;background:var(--soft);color:var(--live);font-size:.82rem;font-weight:500}
+.proj p{margin:6px 0;max-width:70ch}.links{display:flex;gap:16px;margin-top:8px}
+.flag{background:var(--card);border:1px solid var(--accent);border-radius:12px;padding:22px;margin:0 -22px}
+dl{display:grid;grid-template-columns:180px 1fr;gap:10px 24px;margin:0}dt{font-weight:500}dd{margin:0;color:var(--muted)}
+footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media(max-width:820px){.hero{grid-template-columns:1fr;padding-top:40px}.job,.proj,dl{grid-template-columns:1fr;gap:4px}.flag{margin:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div>
+      <h1 id="name">Prishita Matreja</h1>
+      <p class="tag" id="tagline"></p>
+      <dl class="contact" id="socials"></dl>
+    </div>
+    <div class="chat" role="region" aria-label="Ask about Prishita">
+      <h2>Ask my portfolio</h2>
+      <p class="sub">Instant answers from a curated knowledge base, with an LLM on Groq for anything else.</p>
+      <div id="log" aria-live="polite"></div>
+      <form id="f"><input id="q" maxlength="500" placeholder="Which project used RAG?" aria-label="Your question" autocomplete="off"><button class="send" id="go">Ask</button></form>
+    </div>
+  </header>
+</div>
+<section><div class="wrap"><h2>Experience</h2><div id="exp"></div></div></section>
+<section><div class="wrap"><h2>Projects</h2><div id="proj"></div></div></section>
+<section><div class="wrap"><h2>Skills</h2><dl id="skills"></dl></div></section>
+<section><div class="wrap"><h2>Education and recognition</h2><p id="edu" style="max-width:70ch"></p><ul id="ach"></ul></div></section>
+<footer><div class="wrap">Built with FastAPI, a small TF-IDF retriever and the Groq API.</div></footer>
+<script>
+const $=id=>document.getElementById(id);
+const h=(t,a={},...k)=>{const e=document.createElement(t);for(const[x,v]of Object.entries(a))e[x]=v;e.append(...k.filter(Boolean));return e};
+const link=l=>h("a",{href:l.url,textContent:l.label,target:l.url.startsWith("http")?"_blank":"",rel:"noopener"});
+fetch("/api/profile").then(r=>r.json()).then(p=>{
+  document.title=p.name+" · AI and data portfolio";
+  $("name").textContent=p.name;$("tagline").textContent=p.tagline;
+  p.socials.filter(s=>s.url&&s.text).forEach(s=>$("socials").append(h("dt",{textContent:s.label}),h("dd",{},link({url:s.url,label:s.text}))));
+  p.experience.forEach((e,i)=>$("exp").append(h("div",{className:"job"+(i==0?" now":"")},
+    h("div",{className:"when",textContent:e.dates}),
+    h("div",{},h("h3",{textContent:e.role}),h("div",{className:"co",textContent:e.company}),h("ul",{},...e.points.map(x=>h("li",{textContent:x})))))));
+  let g="";
+    const order=[...new Set(p.projects.map(x=>x.group))];p.projects.slice().sort((a,b)=>order.indexOf(a.group)-order.indexOf(b.group)).forEach(x=>{
+    if(x.group!==g){g=x.group;$("proj").append(h("div",{className:"group",textContent:g}))}
+    const body=h("div",{},h("h3",{textContent:x.title}),h("p",{textContent:x.description}),
+      x.highlights&&h("ul",{},...x.highlights.map(y=>h("li",{textContent:y}))),
+      x.links.length&&h("div",{className:"links"},...x.links.map(link)));
+    const side=h("div",{},h("div",{className:"stack",textContent:x.stack.join(", ")}),x.badge&&h("span",{className:"badge",textContent:x.badge}));
+    {className:"proj"}
+  });
+  for(const[k,v]of Object.entries(p.skills)){$("skills").append(h("dt",{textContent:k}),h("dd",{textContent:v.join(", ")}))}
+  $("edu").textContent=p.education;p.achievements.forEach(a=>$("ach").append(h("li",{textContent:a})));
+  say("a","Hi, I can answer questions about Prishita’s work. Try one of these:");
+  chips(["What did she build at FTS Solutions?","Tell me about the ML ensemble project","How can I contact her?"]);
+});
+const hist=[];
+function chips(list){document.querySelectorAll(".chips").forEach(c=>c.remove());
+  const c=h("div",{className:"chips"});list.forEach(t=>c.append(h("button",{type:"button",textContent:t,onclick:()=>ask(t)})));
+  $("log").append(c);$("log").scrollTop=1e9}
+function say(r,t){const m=h("div",{className:"m "+r,textContent:t});$("log").append(m);$("log").scrollTop=1e9;return m}
+async function ask(text){
+  if(!text.trim())return;$("go").disabled=true;say("u",text);$("q").value="";
+  document.querySelectorAll(".chips").forEach(c=>c.remove());const wait=say("a","Thinking…");
+  try{
+    const r=await fetch("/api/chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:text,history:hist})});
+    const d=await r.json();
+    if(!r.ok)throw new Error(d.detail||"Something went wrong.");
+    wait.textContent=d.reply;if(d.followups)chips(d.followups);hist.push({role:"user",content:text},{role:"assistant",content:d.reply});
+  }catch(e){wait.className="m e";wait.textContent=e.message}
+  $("go").disabled=false;$("log").scrollTop=1e9;
+}
+$("f").addEventListener("submit",e=>{e.preventDefault();ask($("q").value)});
+</script>
+</body>
+</html>
