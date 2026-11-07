@@ -49,10 +49,9 @@ ul{margin:8px 0 0;padding-left:1.1em}li{margin:4px 0;max-width:70ch}
 .stack{color:var(--muted);font-size:.88rem}
 .badge{display:inline-block;margin-top:8px;padding:2px 10px;border-radius:99px;background:var(--soft);color:var(--live);font-size:.82rem;font-weight:500}
 .proj p{margin:6px 0;max-width:70ch}.links{display:flex;gap:16px;margin-top:8px}
-.flag{background:var(--card);border:1px solid var(--accent);border-radius:12px;padding:22px;margin:0 -22px}
 dl{display:grid;grid-template-columns:180px 1fr;gap:10px 24px;margin:0}dt{font-weight:500}dd{margin:0;color:var(--muted)}
 footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
-@media(max-width:820px){.hero{grid-template-columns:1fr;padding-top:40px}.job,.proj,dl{grid-template-columns:1fr;gap:4px}.flag{margin:0}}
+@media(max-width:820px){.hero{grid-template-columns:1fr;padding-top:40px}.job,.proj,dl{grid-template-columns:1fr;gap:4px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
@@ -89,13 +88,13 @@ fetch("/api/profile").then(r=>r.json()).then(p=>{
     h("div",{className:"when",textContent:e.dates}),
     h("div",{},h("h3",{textContent:e.role}),h("div",{className:"co",textContent:e.company}),h("ul",{},...e.points.map(x=>h("li",{textContent:x})))))));
   let g="";
-    const order=[...new Set(p.projects.map(x=>x.group))];p.projects.slice().sort((a,b)=>order.indexOf(a.group)-order.indexOf(b.group)).forEach(x=>{
+  const order=[...new Set(p.projects.map(x=>x.group))];p.projects.slice().sort((a,b)=>order.indexOf(a.group)-order.indexOf(b.group)).forEach(x=>{
     if(x.group!==g){g=x.group;$("proj").append(h("div",{className:"group",textContent:g}))}
     const body=h("div",{},h("h3",{textContent:x.title}),h("p",{textContent:x.description}),
       x.highlights&&h("ul",{},...x.highlights.map(y=>h("li",{textContent:y}))),
       x.links.length&&h("div",{className:"links"},...x.links.map(link)));
     const side=h("div",{},h("div",{className:"stack",textContent:x.stack.join(", ")}),x.badge&&h("span",{className:"badge",textContent:x.badge}));
-    {className:"proj"}
+    $("proj").append(h("article",{className:"proj"},side,body));
   });
   for(const[k,v]of Object.entries(p.skills)){$("skills").append(h("dt",{textContent:k}),h("dd",{textContent:v.join(", ")}))}
   $("edu").textContent=p.education;p.achievements.forEach(a=>$("ach").append(h("li",{textContent:a})));
